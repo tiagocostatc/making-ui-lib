@@ -1,0 +1,26 @@
+{
+  "name": "uilib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tiagocostatc/making-ui-lib.git",
+  "author": "tmfcosta",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --content-base public --inline --hot --config webpack.config.dev.js",
+    "build": "webpack --mode production --config webpack.config.prod.js"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "uglify-js-plugin": "^0.0.6",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
