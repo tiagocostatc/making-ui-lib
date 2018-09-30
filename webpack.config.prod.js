@@ -1,5 +1,6 @@
 const pkg = require("./package.json");
 let libraryName = pkg.name;
+var path = require('path');
 
 module.exports = {
     entry: './src/index',
@@ -16,8 +17,10 @@ module.exports = {
         ]
     },
     output : {
-        path : __dirname + "/lib/",
+        path : __dirname + "/lib",
         filename : libraryName + '.min.js',
-        library : libraryName
+        library : libraryName,
+        libraryTarget : "umd",
+        umdNamedDefine : true
     }
 }

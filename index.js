@@ -1,1 +1,1 @@
-export * from './lib/ui-lib.min.js';
+export * from './lib/uilib.min.js';
